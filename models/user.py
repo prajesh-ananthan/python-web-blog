@@ -3,8 +3,9 @@ import uuid
 
 from flask import session
 
-from blog_site.common.database import Database
-from blog_site.webapp.models.blog import Blog
+from common.database import Database
+from models.blog import Blog
+
 
 class User(object):
     COLLECTION_NAME = 'users'

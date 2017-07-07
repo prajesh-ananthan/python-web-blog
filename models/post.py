@@ -1,7 +1,7 @@
 import datetime
 import uuid
 
-from blog_site.common.database import Database
+from common.database import Database
 
 __author__ = 'Prajesh Ananthan'
 

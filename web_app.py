@@ -4,9 +4,9 @@ from flask import render_template
 from flask import request
 from flask import session
 
-from blog_site.common.database import Database
-from blog_site.webapp.models.blog import Blog
-from blog_site.webapp.models.user import User
+from common.database import Database
+from models.blog import Blog
+from models.user import User
 
 app = Flask(__name__)
 app.secret_key = '\x1e\x14\xe6\xa0\xc5\xcc\xd9\x7f\xe5\xe8\x1cZ\xc5\xf2r\xb0W#\xed\xb6\xc8'
