@@ -82,7 +82,9 @@ def user_blogs(user_id=None):
 def blog_posts(blog_id):
     blog = Blog.from_mongo_in_blog_object(blog_id)
     posts = blog.get_post()
-    return render_template("user_blog_posts.html", blog_title=blog.title, blog_id=blog_id, posts=posts)
+    return render_template("user_blog_posts.html",
+                           blog_title=blog.title,
+                           blog_id=blog_id, posts=posts)
 
 
 @app.route('/blogs/new/', methods=['GET', 'POST'])
